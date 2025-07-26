@@ -1,33 +1,34 @@
----
-tags:
-- 3d
-viewer: false
----
+# 3DGS Render Blender Addon by KIRI Engine
+<a href="./LICENSE">
+        <img alt="License" src="https://img.shields.io/badge/License-Apache_2.0-blue.svg"></a>
 
-# Make-It-Animatable: An Efficient Framework for Authoring Animation-Ready 3D Characters
+## Introduction:
+This Blender addon streamlines the process of working with 3DGS (3D Gaussian Splatting) scans in your 3D projects. Here's what it offers:
 
-- [Paper](https://arxiv.org/abs/2411.18197)
-- [Project Page](https://jasongzy.github.io/Make-It-Animatable/)
+1.	Automatic Conversion: Seamlessly transforms.ply scan files into Blender-compatible objects.
+2.	Eevee Compatibility: Converted objects are fully renderable with Blender's Eevee engine.
+3.	Full Object Control: Manipulate your imported scans just like any other Blender object: 
+    - Move, scale, and rotate with precision
+    - Easily duplicate to populate your scenes
+4.	Advanced Lighting Integration: 
+    - Light-Reactive Objects: Imported scans fully interact with scene lighting for realistic rendering
+    - Option for shadeless display to preserve the raw scan appearance
+    - Seamlessly blend scans with other 3D elements in your scene
+5.	Color Enhancement: Fine-tune the visual appeal of your scans with built-in color editing tools.
+By bridging the gap between 3DGS technology and Blender's powerful ecosystem, this addon empowers artists and designers to seamlessly incorporate realistic, light-responsive scans into their 3D workflows.
 
-## Data
 
-- `character`: 95 characters (T-pose with bones and texture) downloaded from [Mixamo](https://www.mixamo.com/#/?page=1&type=Character)
+## Installation:
+❗❗Please note❗❗ The addon was made for the most current version of Blender at the time of writing - Blender 4.2 version. The addon will NOT work with previous versions of Blender. If you zip the installation package yourself, please make sure the zip file is named as: gs_render_by_kiri_engine.zip
 
-- `character_fbx_upgraded`: 51 (among 95) characters with FBX version upgraded by [FBX Converter](https://aps.autodesk.com/developer/overview/fbx-converter-archives) (so that they can be imported into [Blender](https://www.blender.org/))
+Please follow the installation guide in the [doc](https://www.kiriengine.app/blender-addon/3dgs-render).
 
-- **`character_refined`**: all 95 characters (triangle mesh without texture, animatable by any one from `animation`) processed with `character_refine.py`
-  - vertices: 2374 ~ 35128 (average: 15482; details in `character_verts.json`)
-  - bones: 42 ~ 112 (mostly standard 65 *mixamorig* bones; details in `character_bones.txt`)
+## Tutorial:
+The instructions can be found in [doc](https://www.kiriengine.app/blender-addon/3dgs-render).
+The tutorial video can be found [here](https://youtu.be/u6ELrBT6FXw?si=MmRzhqWX123Z4StC).
 
-- **`animation`**: 2453 animations (only bones) downloaded from [Mixamo](https://www.mixamo.com/#/?page=1&type=Motion)
-  - frames: 2 ~ 2801 (average: 212; details in `animation_frames.json`)
+## Questions:
+If you run into any issues or questions, feel free to ask on our [Discord thread](https://discord.com/channels/952917583659667517/1289563910390812723)
 
-## Reproduction
-
-1. Download characters and animations from [Mixamo](https://www.mixamo.com/).
-
-2. Convert old-version FBX (`try_import_blender.py` > `character_old_fbx.txt`) with [FBX Converter](https://aps.autodesk.com/developer/overview/fbx-converter-archives).
-
-3. Rename corrupted bone names in unposed characters (`character_unposed.txt`).
-
-4. Convert all characters into **triangle mesh without texture** with [Blender](https://docs.blender.org/api/current/info_advanced_blender_as_bpy.html).
+## Acknowledgement:
+Thanks to everybody who contributes to this good work from the KIRI Engine team.
