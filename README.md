@@ -1,4 +1,4 @@
-# 3DGS Render Blender Addon by KIRI Engine
+# Make-It-Animatable 3D Rigging Pipeline
 <a href="./LICENSE">
         <img alt="License" src="https://img.shields.io/badge/License-Apache_2.0-blue.svg"></a>
 
@@ -17,18 +17,26 @@ This Blender addon streamlines the process of working with 3DGS (3D Gaussian Spl
 5.	Color Enhancement: Fine-tune the visual appeal of your scans with built-in color editing tools.
 By bridging the gap between 3DGS technology and Blender's powerful ecosystem, this addon empowers artists and designers to seamlessly incorporate realistic, light-responsive scans into their 3D workflows.
 
+This project demonstrates the local setup and execution of the [Make-It-Animatable](https://huggingface.co/jasongzy/Make-It-Animatable) pipeline for automatic 3D character rigging.
+
+## 🔧 Tools & Frameworks
+- Python (via Conda environment)
+- PyTorch
+- PyTorch3D
+- Git LFS
+- Blender (for `.obj` mesh preview and debugging)
+
+  ## 💡 Workflow Summary
+- Installed all required dependencies using `requirements.txt`.
+- Cloned LFS assets via HuggingFace.
+- Rigged custom `.obj` mesh locally using `app.py`.
+- Manually managed submodule issues for clean GitHub upload.
+
+## 🤝 Credits
+Based on the original project by [Jason Gzy](https://huggingface.co/jasongzy/Make-It-Animatable).
+
 
 ## Installation:
 ❗❗Please note❗❗ The addon was made for the most current version of Blender at the time of writing - Blender 4.2 version. The addon will NOT work with previous versions of Blender. If you zip the installation package yourself, please make sure the zip file is named as: gs_render_by_kiri_engine.zip
 
-Please follow the installation guide in the [doc](https://www.kiriengine.app/blender-addon/3dgs-render).
 
-## Tutorial:
-The instructions can be found in [doc](https://www.kiriengine.app/blender-addon/3dgs-render).
-The tutorial video can be found [here](https://youtu.be/u6ELrBT6FXw?si=MmRzhqWX123Z4StC).
-
-## Questions:
-If you run into any issues or questions, feel free to ask on our [Discord thread](https://discord.com/channels/952917583659667517/1289563910390812723)
-
-## Acknowledgement:
-Thanks to everybody who contributes to this good work from the KIRI Engine team.
